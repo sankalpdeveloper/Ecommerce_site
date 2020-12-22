@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> -->
+
+  <!-- Tailwind CSS -->
+  <link rel="stylesheet" href="/css/style_scss.css" />
+  <link rel="stylesheet" href="/css/tailwind.css" />
+  <link rel="stylesheet" href="/css/style.css">
+
+
+  <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+
+  <title>PC Ecomm</title>
+</head>
+
+<body class="bg-gray-200">
+  <div class="flex justify-around p-2 py-4 mb-2 bg-blue-400">
+    <div class="text-4xl logo">Ecomm</div>
+    <div class="float-right w-10 sm:float-none sm:hidden">
+      <a href="#"><img src="/img/square.svg" alt="" /></a>
+    </div>
+    <div class="hidden pt-2 text-xl sm:flex">
+      <div class="pl-12"><a href="#">Home</a> </div>
+      <div class="pl-12"><a href="#">Contact</a></div>
+      <div class="pl-12"><a href="#">About</a></div>
+      <div class="pl-12"><a href="#">Buy/Sell</a></div>
+    </div>
+  </div>
+
+
+  <div class="mb-10 glide">
+    <div class=" glide__track" data-glide-el="track">
+      <ul class="glide__slides">
+        <li class="glide__slide"><img src="/img/panasonic_banner-min-1536x396.png" alt=""></li>
+        <li class="glide__slide"><img src="/img/Pimoroni-Banner-1536x396.jpg" alt=""></li>
+        <li class="glide__slide"><img src="/img/raspberry-pi-400-Single-Unit-1536x396.png" alt=""></li>
+      </ul>
+    </div>
+
+    <div class="glide__arrows" data-glide-el="controls">
+      <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+        << </button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">>></button>
+    </div>
+  </div>
+
+
+  <div class="my-auto">
+    <img src="/img/home/warehouse-44.png" alt="">
+  </div>
+
+  <div class="px-4 mx-20 mb-10 bg-white glide1">
+    <div class="float-right pt-2 mr-4"><h4>Electonics</h4></div>
+    <div class="mt-4 glide__arrows" data-glide-el="controls">
+     
+         <button class="float-left p-2 mr-2 text-gray-700 glide__arrow--left" data-glide-dir="<">
+       < </button>
+         <button class="p-2 text-gray-700 glide__arrow--right" data-glide-dir=">">></button>
+     </div>
+    <div class="glide__track" data-glide-el="track">
+      <ul class="glide__slides">
+        <li class="glide__slide">
+          <a href="#"><img class="h-48" src="/img/product/Arduino-Mega-2560-ATmega2560-4-768x771 (1).jpg"
+              alt="arduino" /></a>
+          <h2 class="text-center text-blue-800">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h2>
+          <p class="text-center text-red-800"><span>Price: </span><span> 2000/-</span></p>
+        </li>
+
+        <li class="glide__slide">
+          <a href="#"><img class="h-48" src="/img/product/Arduino-Mega-2560-ATmega2560-4-768x771 (1).jpg"
+              alt="arduino" /></a>
+          <h2 class="text-center text-blue-800">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h2>
+          <p class="text-center text-red-800"><span>Price: </span><span> 2000/-</span></p>
+        </li>
+
+
+        <li class="glide__slide">
+          <a href="#"><img class="h-48" src="/img/product/Arduino-Mega-2560-ATmega2560-4-768x771 (1).jpg"
+              alt="arduino" /></a>
+          <h2 class="text-center text-blue-800">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h2>
+          <p class="text-center text-red-800"><span>Price: </span><span> 2000/-</span></p>
+        </li>
+
+
+
+        <li class="glide__slide">
+          <a href="#"><img class="h-48" src="/img/product/Arduino-Mega-2560-ATmega2560-4-768x771 (1).jpg"
+              alt="arduino" /></a>
+          <h2 class="text-center text-blue-800">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h2>
+          <p class="text-center text-red-800"><span>Price: </span><span> 2000/-</span></p>
+        </li>
+
+
+        <li class="glide__slide">
+          <a href="#"><img class="h-48" src="/img/product/Arduino-Mega-2560-ATmega2560-4-768x771 (1).jpg"
+              alt="arduino" /></a>
+          <h2 class="text-center text-blue-800">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h2>
+          <p class="text-center text-red-800"><span>Price: </span><span> 2000/-</span></p>
+        </li>
+        
+      </ul>
+    </div>
+
+  </div>
+
+  
+    
+
+
+  <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+
+  <script>
+    var glide = new Glide(".glide", {
+      autoplay: 8000,
+      animationDuration: 2000,
+      hoverpause: true,
+      perView: 1,
+      type: "carousel",
+    });
+    glide.mount();
+
+    var glide1 = new Glide(".glide1", {
+      autoplay: 4000,
+      hoverpause: true,
+      animationDuration: 1000,
+      perView: 5,
+      type: "carousel",
+      breakpoints: {
+        1024: {
+          perView: 4,
+        },
+        800: {
+          perView: 3,
+        },
+        600: {
+          perView: 1,
+        },
+      },
+    });
+    glide1.mount();
+    
+    
+    
+    // var glide2 = new Glide(".glide2", {
+    //   autoplay: 4000,
+    //   hoverpause: true,
+    //   animationDuration: 1000,
+    //   perView: 5,
+    //   type: "carousel",
+    //   breakpoints: {
+    //     1024: {
+    //       perView: 4,
+    //     },
+    //     800: {
+    //       perView: 3,
+    //     },
+    //     600: {
+    //       perView: 1,
+    //     },
+    //   },
+    // });
+    // glide2.mount();
+
+    </script>
+</body>
+
+</html>

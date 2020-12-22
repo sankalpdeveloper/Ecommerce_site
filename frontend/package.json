@@ -1,0 +1,25 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass scss/main.scss css/style_scss.css",
+    "tail": "npx tailwindcss build -o css/tailwind.css"
+  },
+  "keywords": [
+    "tailwind",
+    "ecommerce"
+  ],
+  "author": "sankalp choudhary",
+  "license": "MIT",
+  "dependencies": {
+    "@glidejs/glide": "^3.4.1",
+    "autoprefixer": "^10.1.0",
+    "postcss": "^8.2.1",
+    "tailwindcss": "^2.0.2"
+  },
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
